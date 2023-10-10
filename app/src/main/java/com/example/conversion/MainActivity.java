@@ -91,8 +91,8 @@ public class MainActivity extends AppCompatActivity {
         Kelvin kel = new Kelvin().parse(c);
 
         // Mostrar los resultados en las TextViews
-        textViewResultCelsiusToFahrenheit.setText("Fahrenheit: " + fhr.getValor());
-        textViewResultCelsiusToKelvin.setText("Kelvin: " + kel.getValor());
+        textViewResultCelsiusToFahrenheit.setText(fhr.getValor() + "°F");
+        textViewResultCelsiusToKelvin.setText(kel.getValor() + "°K");
     }
 
     private void convertirKelvins()
@@ -109,8 +109,8 @@ public class MainActivity extends AppCompatActivity {
         Celcius cel = new Celcius().parse(k);
 
         // Mostrar los resultados en las TextViews
-        KelvinToFahrenheit.setText("Fahrenheit: " + fhr.getValor());
-        KelvinToCelsius.setText("Celsius: " + cel.getValor());
+        KelvinToFahrenheit.setText(fhr.getValor() + "°F");
+        KelvinToCelsius.setText(cel.getValor() + "°C");
     }
 
     private void convertirFahrenheit()
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         Celcius cel = new Celcius().parse(f);
 
         // Mostrar los resultados en las TextViews
-        FahrenheitToKelvin.setText("Kelvin: " + kel.getValor());
-        FahrenheitToCelsius.setText("Celsius: " + cel.getValor());
+        FahrenheitToKelvin.setText(kel.getValor() +"°K");
+        FahrenheitToCelsius.setText(cel.getValor() + "°C");
     }
 }
