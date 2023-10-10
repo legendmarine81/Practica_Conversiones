@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:padding="6dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/forma_chida">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONVERTIDOR"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginRight="20sp"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_turning"/>
+
+    </LinearLayout>
+
+    <!--Celsius-->
+    <EditText
+        android:id="@+id/editTextCelsius"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:hint="Ingrese Celsius (°C)"
+        android:inputType="numberDecimal"
+        android:background="@drawable/forma_redonda"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/buttonConvertCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        app:cornerRadius="20dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultados:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewResultCelsiusToFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewResultCelsiusToKelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp" />
+
+    <!--kelvins-->
+    <EditText
+        android:id="@+id/gradosKelvin"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:hint="Ingrese Kelvins (°K)"
+        android:inputType="numberDecimal"
+        android:background="@drawable/forma_redonda"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/buttonConvertKelvins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        app:cornerRadius="20dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultados:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/KelvinToFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/KelvinToCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp" />
+
+    <!--fahrenheit-->
+
+    <EditText
+        android:id="@+id/gradosFahrenheit"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:hint="Ingrese Fahrenheit (°F)"
+        android:inputType="numberDecimal"
+        android:background="@drawable/forma_redonda"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/buttonConvertFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        app:cornerRadius="20dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultados:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/FahrenheitToKelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/FahrenheitToCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp" />
+
+</LinearLayout>
